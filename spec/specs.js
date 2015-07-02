@@ -1,38 +1,27 @@
 describe('Pizza', function() {
-	it(has different sizes, function() {
+	it('comes in sizes', function() {
 		var testPizza = new Pizza("Large");
-		expect(testPizza.size).to.eql('Large');
+		expect(testPizza.size).to.eql("Large");
 	});
 
 
-	it("will cost nothing until the user adds their own pizza with toppings", function() {
-		var testPizza = new Pizza()
-		expect(testPizza.cost).to.equal(0);
+	it('will let user add a topping', function() {
+		var testPizza = new Pizza();
+		testPizza.addTopping("Italian Sausage");
+		expect(testPizza.toppings).to.eql(['Italian Sausage']);
 	});
 
 
-	// it("lets a user choose a size of pizza", function() {
-	// 	var testPizza = new Pizza('Large')
-	// 	expect(testPizza.size).to.equal('Large');
-	// });
+
+	it('has different prices for different sizes', function() {
+		var testPizza = new Pizza("Texas");
+		expect(testPizza.price()).to.equal(50);
+	});
 
 
-	// it('will let user add a topping', function() {
-	// 	var testPizza = new Pizza('large')
-	// 	pizza.addTopping("pepperoni")
-	// 	expect(testPizza.toppings).to.eql(['pepperoni']);
-	// });
-
-
-	// it('has different costs for different sizes', function() {
-	// 	var testPizza = new Pizza("large")
-	// 	expect(testPizza.cost()).to.equal(20)
-	// });
-
-
-	// it('returns the cost of the pizza if toppings are added at a dollar per topping', function() {
-	// 	var testPizza = new Pizza('large')
-	// 	pizza.addTopping('pepperoni')
-	// 	expect(testPizza.cost()).to.equal(21);
-	// });
+	it('returns the cost of the pizza if toppings are added at a dollar per topping', function() {
+		var testPizza = new Pizza('Large');
+		testPizza.addTopping('Pepperoni');
+		expect(testPizza.price()).to.equal(21);
+	});
 });
