@@ -1,24 +1,31 @@
 function Pizza(toppings, cost, size) {
-	this.toppings = []
-	this.cost = 0
-	this.size = size
+	this.toppings = [];
+	this.cost = 0;
+	this.size = size;
 }
 
-Pizza.prototype.cost = function() {
+Pizza.prototype.price = function() {
+	var cost;
 		if (this.size === "Small") {
-		cost = 10;
+		this.cost += 10;
 	}	else if (this.size === "Medium") {
-		cost = 15;
+		this.cost += 15;
 	} 	else if (this.size === "Large") {
-		cost = 20;
+		this.cost += 20;
 	}	else if (this.size === "Texas") {
-		cost = 50;
+		this.cost += 50;
 	}
-	return cost + (this.toppings.length);
+	this.cost = (this.toppings.length)
+	return this.cost;
 	
 }
 
 Pizza.prototype.addTopping = function(type) {
 	this.toppings.push(type)
 	return this.toppings;
+}
+
+
+function Topping(cost) {
+	this.cost = 1;
 }
