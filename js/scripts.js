@@ -23,7 +23,7 @@ Pizza.prototype.price = function() {
 }
 
 Pizza.prototype.checkOut = function() {
-  var string = this.size + " plain cheese with: ";
+  var string = this.size + " plain cheese with:";
 
   if (this.toppings.length > 0) {
     for(var i = 0; i < this.toppings.length; i++) {
@@ -47,12 +47,13 @@ function addPizza() {
                             '</div>' +
                             '<div class="form-group">' +
                               '<fieldset id="form-toppings">' +
-                                '<label for="toppings">Add toppings*:</label><br>' +
-                                '<input type="checkbox" name="toppings" value="Hamburger"> Hamburger<br>' +
-                                '<input type="checkbox" name="toppings" value="Canadian Bacon"> Canadian Bacon<br>' +
-                                '<input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>' +
-                                '<input type="checkbox" name="toppings" value="Shrooms"> Shrooms<br>' +
-                                '<input type="checkbox" name="toppings" value="Italian Super Spicy Sausage"> Italian Super Spicy Sausage<br>' +
+                                '<label for="toppings">Add toppings*:</label><br><br>' +
+                                '<input type="checkbox" name="toppings" value="Hamburger"> Hamburger<br><br>' +
+                                '<input type="checkbox" name="toppings" value="Canadian Bacon"> Canadian Bacon<br><br>' +
+                                '<input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br><br>' +
+                                '<input type="checkbox" name="toppings" value="Shrooms"> Shrooms<br><br>' +
+                                '<input type="checkbox" name="toppings" value="Italian Super Spicy Sausage"> Italian Super Spicy Sausage<br><br>' +
+                                '<input type="checkbox" name="toppings" value="Flerm"> Flerm<br><br>' +
                               '</fieldset>' +
                             '</div>' +
                           '</div>');
