@@ -6,22 +6,22 @@ A small web app that was built as part of the Spring 2015 javaScript course curr
 
 This app was created as an exercise in Object-Oriented JS along with JQuery.
 
-+## Functionality:
-+
+Functionality:
 Coppola's Pizza is a website that takes online orders for a fictional (or is it?) pizza company. Users are shown a form to add pizzas of their choosing to their order (they have options for different sizes, toppings, etc.) Upon adding each pizza, the user can either opt to add another, or proceed to review their order and check out. A rudimentary receipt with cost breakdown is provided to the user.
 
-+## Tests:
-+
-+Both tests for Pizza Party utilize both Mocha and Chai. Simply run the spec-runner.html file (located in the spec folder) in order to see real-time test results. Any additional tests may be written to the specs.js folder, and run in the same method.
+Tests:
+Both tests for Coppola's Pizza utilize both Mocha and Chai. Simply run the spec-runner.html file (located in the spec folder) in order to see real-time test results. Any additional tests may be written to the specs.js folder, and run in the same method.
 
-Authored by :Debbie Balbo 
+Authored by:Debbie Balbo 
 
-+## License
-+
-+The MIT License (MIT)
-+
-+Copyright (c) 2015 Courtney Phillips
-+
+
+Still a work in progress, though is fully functioning.
+
+The MIT License (MIT)
+
+
+
+
 +Permission is hereby granted, free of charge, to any person obtaining a copy
 +of this software and associated documentation files (the "Software"), to deal
 +in the Software without restriction, including without limitation the rights
